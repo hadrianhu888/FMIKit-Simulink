@@ -12,14 +12,14 @@ if ~isempty(listing)
 end
 
 if ispc
-  filename = 'cmake-3.24.1-windows-x86_64.zip';
+  filename = 'cmake-3.25.0-rc3-windows-x86_64.zip';
 elseif ismac
-  filename = 'cmake-3.24.1-macos-universal.tar.gz';
+  filename = 'cmake-3.25.0-rc3-macos-universal.tar.gz';
 else
-  filename = 'cmake-3.24.1-linux-x86_64.tar.gz';
+  filename = 'cmake-3.25.0-rc3-linux-x86_64.tar.gz';
 end
 
-url = ['https://github.com/Kitware/CMake/releases/v3.24.1.zip' filename]; 
+url = ['https://github.com/Kitware/CMake/releases/v3.25.0-rc3.zip/', filename]; 
 
 disp(['Downloading ' url])
 archive = websave(filename, url);
